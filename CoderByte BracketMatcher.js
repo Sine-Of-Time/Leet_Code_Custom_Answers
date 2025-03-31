@@ -2,7 +2,7 @@ function BracketMatcher(str) {
   const stack = [];
   
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === '(') {
+    if (str[i] === '(') { //Best to use === in js
       stack.push('(');
     } else if (str[i] === ')') {
       if (stack.length === 0) {
